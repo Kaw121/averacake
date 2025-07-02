@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avera Cake - Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+ <header class="header">
+  <div class="topbar">
+    <div class="logo-area">
+      <img src="gambar/logo.png" alt="Logo" class="logo-small">
+      <div class="brand-text">
+        <p class="est">EST. 2020</p>
+        <h1 class="brand-name">AVERA CAKE</h1>
+        <p class="tagline">Delicious in every bite</p>
+      </div>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html" class="active">Home</a>
+      <a href="product.html">Products</a>
+      <a href="why-us.html">Why Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+
+  <!-- HERO SECTION -->
+<section class="hero-carousel">
+  <div class="carousel-container">
+    <div class="carousel-slide fade">
+      <img src="gambar/gambar1.jpg" alt="Hero 1" />
+      <blockquote>“Avera Cake is more than just a dessert. It’s a slice of tradition, love, and happy memory that lingers in every bite.”</blockquote>
+    </div>
+    <div class="carousel-slide fade">
+      <img src="gambar/prunes.jpg" alt="Hero 2" />
+      <blockquote>“Every bite from Avera Cake feels like home. Classic, comforting, unforgettable.”</blockquote>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- UNIQUE SECTION -->
+<section class="unique">
+  <h2>WHAT MAKES AVERA CAKE UNIQUE?</h2>
+
+  <div class="unique-item animate-left">
+    <img src="gambar/gambar1.jpg" alt="Premium Quality" />
+    <div class="unique-text">
+      <h3>PREMIUM QUALITY</h3>
+      <p>Premium ingredients paired with warm memories. Each bite is hand-crafted with care. Avera Cake blends the warmth of tradition, family, and love into its creations—making homemade thoughts truly refined.</p>
+    </div>
+  </div>
+
+  <div class="unique-item reverse animate-right">
+    <img src="gambar/gambar1.jpg" alt="Premium Quality" />
+    <div class="unique-text">
+      <h3>PREMIUM QUALITY</h3>
+      <p>Layers bring a uniquely dreamy sort of bite. From classic family recipes to innovative creations, Avera Cake is proud to offer a delicious experience rooted in quality craftsmanship and golden flavors.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- TESTIMONI -->
+<section class="testimonial-carousel" style="background: #fff2e7;  font-family: sans-serif; color: #5c4033;">
+  <h2>WHAT OUR CUSTOMER SAY</h2>
+  <div class="testimonial-container" >
+    <div class="testimonial-slide fade">
+      <p>“Averacake beyond just taste. Every bite reminds me of home. The warmth, the love, and the care are real.”</p>
+    </div>
+    <div class="testimonial-slide fade">
+      <p>“These boxes of cakes are filled with love. It’s not just snack time, it’s family time.”</p>
+    </div>
+    <div class="testimonial-slide fade">
+      <p>“Delicious, soft, and comforting — my kids won’t stop asking for it. 100% recommended.”</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo-area">
+    <img src="gambar/logo.png" alt="Logo Besar" class="logo-center">
+ 
+  </div>
+
+  <div class="footer-links">
+    <div class="column">
+      <h3>E-Commerce</h3>
+      <p class="icon-text">
+        <i class="fas fa-shopping-cart"></i>
+        <a href="https://shopee.co.id/averacake" target="_blank" rel="noopener" class="no-underline">Shopee</a>
+      </p>
+      <p class="icon-text">
+        <i class="fas fa-store-alt" style="color:#f26322;"></i>
+        <a href="https://www.tokopedia.com/averacake" target="_blank" rel="noopener" class="no-underline">Tokopedia</a>
+      </p>
+    </div>
+    <div class="column">
+      <h3>Social Media</h3>
+      <p class="icon-text">
+        <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/averacake/" target="_blank" rel="noopener" class="no-underline">Instagram</a>
+      </p>
+      <p class="icon-text">
+        <i class="fab fa-tiktok"></i>
+        <a href="https://vt.tiktok.com/ZSdYNGfnk/" target="_blank" rel="noopener" class="no-underline">TikTok</a>
+      </p>
+      <p class="icon-text">
+        <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/+6282348514164" target="_blank" rel="noopener" class="no-underline">WhatsApp</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+
+</body>
+</html>
+
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  const slides = document.getElementsByClassName("carousel-slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) { slideIndex = 1 }    
+  slides[slideIndex - 1].style.display = "block";  
+  setTimeout(showSlides, 4000); // Ganti gambar tiap 4 detik
+}
+
+let testiIndex = 0;
+showTestimonialSlides();
+
+function showTestimonialSlides() {
+  const slides = document.getElementsByClassName("testimonial-slide");
+  for (let i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  testiIndex++;
+  if (testiIndex > slides.length) { testiIndex = 1 }    
+  slides[testiIndex - 1].style.display = "block";  
+  setTimeout(showTestimonialSlides, 4000); // Ganti testimoni tiap 4 detik
+}
+</script>
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("navMenu");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+</script>

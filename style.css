@@ -1,0 +1,504 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #fefaf6;
+  color: #5a4231;
+}
+.header {
+  background: #ffe8d1;
+  padding: 30px 100px 50px;
+ 
+}
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+ 
+}
+.logo-small {
+  width: 40px;
+}
+.brand-text {
+  line-height: 1.2;
+}
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin: 0;
+}
+.est {
+  font-size: 12px;
+  margin: 0;
+}
+.tagline {
+  font-size: 13px;
+  font-style: italic;
+  color: #ba895d;
+}
+.nav a {
+  background-color: white;
+  color: #5a4231;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 20px;
+  margin-left: 10px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+.nav a:hover,
+.nav a.active {
+  background-color: #fdd9b5;
+}
+.hero {
+  text-align: center;
+  padding: 60px 100px;
+}
+.hero-image {
+  width: 400px;
+}
+.hero-quote {
+  font-size: 18px;
+  margin-top: 30px;
+  font-style: italic;
+  color: #5a4231;
+}
+.unique {
+  background: #f5e7d9;
+  padding: 60px 100px;
+}
+.unique h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.unique-item {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+.unique-item.reverse {
+  flex-direction: row-reverse;
+}
+.unique-item img {
+  width: 300px;
+  border-radius: 10px;
+}
+.unique-text {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 400px;
+}
+.testimonial {
+  background: #fff;
+  padding: 60px 100px;
+  text-align: center;
+}
+.testimonial h2 {
+  margin-bottom: 30px;
+}
+.footer {
+  background-color: #f5e5d8; /* Warna coklat cream */
+  padding: 40px 20px;
+  color: #5c4033; /* Warna coklat tua untuk teks */
+}
+
+.footer a.no-underline {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer a.no-underline:hover {
+  color: #d2691e; /* Hover dengan warna coklat tua */
+}
+
+.footer-logo-area {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.column {
+  text-align: left;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-start;
+}
+
+.logo-center {
+  width: 200px;
+  margin-bottom: 10px;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+}
+.column h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.column p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+.column i {
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+
+.hero-carousel {
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-slide {
+  display: none;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100vh; /* Bikin gambar setinggi layar */
+  object-fit: cover;
+  display: block;
+}
+
+.carousel-slide blockquote {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-style: italic;
+  font-size: 24px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px 24px;
+  border-radius: 8px;
+  max-width: 80%;
+  text-align: center;
+}
+
+.fade {
+  animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+
+.testimonial-carousel {
+  padding: 60px 40px;
+  text-align: center;
+ 
+  margin: 0 auto;
+}
+
+.testimonial-carousel h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.testimonial-container {
+  position: relative;
+  min-height: 120px;
+}
+
+.testimonial-slide {
+  display: none;
+  font-size: 18px;
+  font-style: italic;
+  color: #5a4231;
+  padding: 0 20px;
+}
+
+.fade {
+  animation: fadeEffect 0.8s;
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+/* UNIQUE SECTION */
+.unique {
+  background: linear-gradient(to bottom, #fefaf6 0%, #f5e7d9 100%);
+  padding: 80px 40px;
+  position: relative;
+}
+
+.unique h2 {
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 60px;
+  font-weight: bold;
+  color: #5a4231;
+  position: relative;
+}
+
+.unique-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 60px;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.unique-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.unique-item img {
+  width: 350px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.unique-item img:hover {
+  transform: scale(1.05);
+}
+
+.unique-text {
+  max-width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  text-align: left;
+}
+
+.unique-text h3 {
+  color: #ba895d;
+  margin-bottom: 10px;
+}
+
+.unique-text p {
+  color: #5a4231;
+  line-height: 1.6;
+}
+
+/* ANIMASI */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-left {
+  animation-name: slideInLeft;
+}
+
+.animate-right {
+  animation-name: slideInRight;
+}
+.footer .fab.fa-instagram {
+  color: #E4405F; /* Warna merah-pink khas Instagram */
+}
+
+.footer .fab.fa-tiktok {
+  color: #000000; /* TikTok dominan hitam, bisa juga dikasih gradasi atau biru-merah via custom */
+}
+
+.footer .fab.fa-whatsapp {
+  color: #25D366; /* Warna hijau khas WhatsApp */
+}
+
+.footer .fas.fa-shopping-cart {
+  color: #ee4d2d; /* Warna oranye khas Shopee */
+}
+
+.footer .fas.fa-store-alt {
+  color: #42b549; /* Warna hijau khas Tokopedia */
+}
+
+.brand-text {
+  line-height: 1.2;
+}
+
+.brand-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  margin: 0;
+}
+
+.est {
+  font-size: 12px;
+  margin: 0;
+}
+
+.tagline {
+  font-size: 13px;
+  font-style: italic;
+  color: #ba895d;
+}
+
+.nav {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.nav a {
+  background-color: white;
+  color: #5a4231;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: all 0.2s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+  background-color: #fdd9b5;
+}
+
+/* PRODUCTS */
+.products {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.products h2 {
+  font-size: 26px;
+  margin-bottom: 40px;
+}
+
+.category {
+  margin-bottom: 50px;
+}
+
+.category h3 {
+  font-size: 20px;
+  color: #ba895d;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card p {
+  padding: 12px 0;
+  font-weight: 500;
+}
+/* Bagian umum */
+.nav {
+  display: flex;
+  gap: 15px;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  background: none;
+  border: none;
+  color: #5a4231;
+  cursor: pointer;
+}
+
+/* RESPONSIVE STYLE */
+@media (max-width: 768px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+    margin-top: -40px;
+  }
+
+  .nav {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+    margin-top: 20px;
+  }
+
+  .nav a {
+    width: 100%;
+    padding: 12px;
+    border-top: 1px solid #eee;
+  }
+
+  .nav.show {
+    display: flex;
+  }
+}

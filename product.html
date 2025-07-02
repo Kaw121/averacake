@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avera Cake - Products</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body style="background:  #f5e5d8;">
+
+ <header class="header">
+  <div class="topbar">
+    <div class="logo-area">
+      <img src="gambar/logo.png" alt="Logo" class="logo-small">
+      <div class="brand-text">
+        <p class="est">EST. 2020</p>
+        <h1 class="brand-name">AVERA CAKE</h1>
+        <p class="tagline">Delicious in every bite</p>
+      </div>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html" class="active">Home</a>
+      <a href="product.html">Products</a>
+      <a href="why-us.html">Why Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="products" style="background:  #f5e5d8;">
+  <h2>OUR PRODUCTS</h2>
+
+  <div class="category">
+    <h3>Reguler Series</h3>
+    <div class="grid" style="display: flex; gap: 20px; flex-wrap: wrap;">
+      <div class="card" style="background-color: #fcefe3; padding: 16px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center;">
+        <img src="gambar/produk1.jpg" alt="Personal Size" style="width: 100%; border-radius: 8px;">
+        <p>Personal Size</p>
+      </div>
+      <div class="card" style="background-color: #f9dcc4; padding: 16px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center;">
+        <img src="gambar/produk2.jpg" alt="Couple Size" style="width: 100%; border-radius: 8px;">
+        <p>Couple Size</p>
+      </div>
+      <div class="card" style="background-color: #f6c6a7; padding: 16px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center;">
+        <img src="gambar/produk3.jpg" alt="Family Size" style="width: 100%; border-radius: 8px;">
+        <p>Family Size</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="category">
+    <h3>Bite Size Series</h3>
+    <div class="grid" style="display: flex; gap: 20px; flex-wrap: wrap;">
+      <div class="card" style="background-color: #eac7b5; padding: 16px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center;">
+        <img src="gambar/produk1.jpg" alt="20 Pcs" style="width: 100%; border-radius: 8px;">
+        <p>20 Pcs</p>
+      </div>
+      <div class="card" style="background-color: #e5b299; padding: 16px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center;">
+        <img src="gambar/produk3.jpg" alt="30 Pcs" style="width: 100%; border-radius: 8px;">
+        <p>30 Pcs</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="category">
+    <h3>Heritage Series</h3>
+    <div class="grid" style="display: flex; gap: 20px; flex-wrap: wrap;">
+      <div class="card" style="background-color: #f6c6a7; padding: 16px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.05); text-align: center;">
+        <img src="gambar/produk4.jpg" alt="Stevia Layer Cake" style="width: 100%; border-radius: 8px;">
+        <p>Stevia Layer Cake</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-logo-area">
+    <img src="gambar/logo.png" alt="Logo Besar" class="logo-center">
+ 
+  </div>
+
+  <div class="footer-links">
+    <div class="column">
+      <h3>E-Commerce</h3>
+      <p class="icon-text">
+        <i class="fas fa-shopping-cart"></i>
+        <a href="https://shopee.co.id/averacake" target="_blank" rel="noopener" class="no-underline">Shopee</a>
+      </p>
+      <p class="icon-text">
+        <i class="fas fa-store-alt" style="color:#f26322;"></i>
+        <a href="https://www.tokopedia.com/averacake" target="_blank" rel="noopener" class="no-underline">Tokopedia</a>
+      </p>
+    </div>
+    <div class="column">
+      <h3>Social Media</h3>
+      <p class="icon-text">
+        <i class="fab fa-instagram"></i>
+        <a href="https://www.instagram.com/averacake/" target="_blank" rel="noopener" class="no-underline">Instagram</a>
+      </p>
+      <p class="icon-text">
+        <i class="fab fa-tiktok"></i>
+        <a href="https://vt.tiktok.com/ZSdYNGfnk/" target="_blank" rel="noopener" class="no-underline">TikTok</a>
+      </p>
+      <p class="icon-text">
+        <i class="fab fa-whatsapp"></i>
+        <a href="https://wa.me/+6282348514164" target="_blank" rel="noopener" class="no-underline">WhatsApp</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("navMenu");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+</script>

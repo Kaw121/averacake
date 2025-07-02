@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avera Cake</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Open+Sans&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+ <header class="header">
+  <div class="topbar">
+    <div class="logo-area">
+      <img src="gambar/logo.png" alt="Logo" class="logo-small">
+      <div class="brand-text">
+        <p class="est">EST. 2020</p>
+        <h1 class="brand-name">AVERA CAKE</h1>
+        <p class="tagline">Delicious in every bite</p>
+      </div>
+    </div>
+
+    <button class="menu-toggle" id="menuToggle">&#9776;</button>
+
+    <nav class="nav" id="navMenu">
+      <a href="index.html" class="active">Home</a>
+      <a href="product.html">Products</a>
+      <a href="why-us.html">Why Us</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="whyus" style="background:#fcefe3; padding: 50px 20px; font-family: sans-serif; color: #5c4033;">
+  <h2 style="text-align: center; margin-bottom: 40px;">WHY US ?</h2>
+
+  <!-- Block 1 -->
+  <div class="whyus-block" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; margin-bottom: 40px; animation: fadeSlide 1s ease forwards; opacity: 0;">
+    <img src="gambar/produk5.jpg" alt="Premium Quality" style="width: 100%; max-width: 400px; border-radius: 12px; flex: 1;">
+    <div class="text-box" style="flex: 2; min-width: 260px;">
+      <h3 style="margin-bottom: 10px;">PREMIUM QUALITY</h3>
+      <p style="line-height: 1.6;">
+        Avera Cake uses premium ingredients, with Wijsman butter as the main base, giving its lapis legit a rich taste and smooth texture that reflects its exclusive quality.
+      </p>
+    </div>
+  </div>
+
+  <!-- Block 2 -->
+  <div class="whyus-block cards" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center; animation: fadeSlide 1.5s ease forwards; opacity: 0;">
+    <div class="card-imgs" style="display: flex; gap: 10px; flex-wrap: wrap; flex: 1; min-width: 260px;">
+      <img src="gambar/card1.jpg" alt="Card 1" style="width: 100%; max-width: 120px; border-radius: 8px;">
+      <img src="gambar/produk5.jpg" alt="Card 2" style="width: 100%; max-width: 120px; border-radius: 8px;">
+      <img src="gambar/card1.jpg" alt="Card 3" style="width: 100%; max-width: 120px; border-radius: 8px;">
+    </div>
+    <div class="text-box" style="flex: 2;">
+      <h3 style="margin-bottom: 10px;">Personalized Greeting Cards for Your Loved Ones</h3>
+      <p style="line-height: 1.6;">
+        Avera Cake also provides a variety of greeting cards designed to express heartfelt messages for your loved ones. Whether it’s a birthday, anniversary, or simply a token of appreciation, these thoughtfully crafted cards add a personal and meaningful touch to every cake, making each gift more memorable.
+      </p>
+    </div>
+  </div>
+
+  <!-- Inline Animation CSS -->
+  <style>
+    @keyframes fadeSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</section>
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-logo-area">
+      <img src="gambar/logo.png" alt="Logo Besar" class="logo-center">
+      <p class="est">EST. 2020</p>
+      <h2 class="brand-name">AVERA CAKE</h2>
+      <p class="tagline">Delicious in every bite</p>
+    </div>
+
+    <div class="footer-links">
+      <div class="column">
+        <h3>E-Commerce</h3>
+        <p><i class="fas fa-store"></i> averacake</p>
+        <p><i class="fas fa-shopping-bag" style="color:#f26322;"></i> averacake</p>
+      </div>
+      <div class="column">
+        <h3>Social Media</h3>
+        <p><i class="fab fa-instagram"></i> @averacake</p>
+        <p><i class="fab fa-tiktok"></i> @averacake</p>
+        <p><i class="fab fa-whatsapp"></i> @averacake</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+<script>
+  const toggle = document.getElementById("menuToggle");
+  const nav = document.getElementById("navMenu");
+
+  toggle.addEventListener("click", () => {
+    nav.classList.toggle("show");
+  });
+</script>
